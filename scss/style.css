@@ -1345,6 +1345,15 @@ hr.light {
   font-size: 11px;
 }
 
+.size-change {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
 .accordion .acd-group .acd-heading:before {
   font-family: fontawesome;
   cursor: pointer;
@@ -15413,6 +15422,14 @@ canvas {
     padding: 14px 20px;
   }
 }
+.flex-services {
+  display: flex;
+  justify-content: center;
+}
+.flex-services p {
+  margin: 0 9px 15px 9px;
+}
+
 .product {
   text-align: center;
   position: relative;
