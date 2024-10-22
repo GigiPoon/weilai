@@ -403,6 +403,7 @@
             Canvas.top_Fixed();
             Canvas.sticky_Header();
             Canvas.position();
+
             // window resize function used for update the function on windows resize
             $(window).resize(function () {
                 // Canvas.outside_close();
@@ -412,3 +413,33 @@
     };
     /*global $, jQuery, document*/
 }(jQuery));
+
+    // Language switching function
+    function setupLanguageSwitch() {
+        // Initially hide elements with lang="es"
+        document.querySelectorAll('[lang="es"]').forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Add a click event listener to the switch-lang button
+        document.getElementById('switch-lang').addEventListener('click', function() {
+            // Get all elements with lang attribute "es" and "en"
+            const esElements = document.querySelectorAll('[lang="es"]');
+            const enElements = document.querySelectorAll('[lang="en"]');
+
+            // Check the current display status of the first element of each language group
+            const isEsVisible = esElements[0].style.display !== 'none';
+
+            // Toggle the display based on the visibility of esElements
+            esElements.forEach(function(element) {
+                element.style.display = isEsVisible ? 'none' : 'block';
+            });
+
+            enElements.forEach(function(element) {
+                element.style.display = isEsVisible ? 'block' : 'none';
+            });
+        });
+    }
+
+    // Initialize language switch
+    setupLanguageSwitch();

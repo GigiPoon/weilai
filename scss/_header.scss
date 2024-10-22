@@ -1818,3 +1818,45 @@ header.one-page.light {
   .menu-center .mega-menu > section.menu-list-items .search-cart .search {display: inline-block;} 
 
 }
+
+
+//language translator css
+.custom-select {
+  color: white;                    /* Set text color to white */
+  background: transparent;        /* Remove background */
+  border: 1px solid white;        /* Add a 1px white border */
+  border-radius: 20px;           /* Rounder border radius */
+  padding: 1px 5px;                 /* Add padding for better appearance */
+  appearance: none;               /* Remove default dropdown arrow */
+  text-align: center;             /* Center the text */
+  cursor: pointer;                /* Change cursor to pointer */
+  font-size: 14px;
+}
+
+/* Style for the dropdown menu */
+.custom-select option {
+  background-color: #1780B8;     /* Background color for dropdown options */
+  color: white;                  /* Text color for dropdown options */
+  text-align: center;            /* Center text in dropdown options */
+  margin: 0 auto;
+}
+
+/* Hover effect for the select element */
+.custom-select:hover {
+  background-color: #1780B8;     /* Change background color on hover */
+}
+
+/* Selected effect for the select element */
+.custom-select:focus {
+  background-color: #1780B8;     /* Change background color when selected */
+  outline: none;                 /* Remove default outline */
+  border-color: white;           /* Ensure border color remains white */
+}
+
+//services products
+.vertical-center {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

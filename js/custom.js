@@ -1034,6 +1034,7 @@ jarallax(document.querySelectorAll('.jarallax'));
           POTENZA.pieChart(),
           POTENZA.progressBar();
     });
+
  //Document ready functions
     $document.ready(function () {
         POTENZA.megaMenu(),
@@ -1071,3 +1072,27 @@ jarallax(document.querySelectorAll('.jarallax'));
         POTENZA.mobileview();
     });
 })(jQuery);
+
+
+$(document).ready(function () {
+  // Initially hide non-default languages
+  $('[lang="es"], [lang="zh"]').hide();
+
+  $('#lang-switch').change(function (event) {
+      // Prevent default action (if in a form)
+      event.preventDefault();
+      
+      // Get the selected language
+      var lang = $(this).val();
+
+      // Change the lang attribute of the <html> element
+        $('html').attr('lang', lang);
+      
+      // Hide all language-specific content
+      $('[lang]').hide();
+      
+      // Show content for the selected language
+      $('[lang="' + lang + '"]').show();
+      
+  });
+});

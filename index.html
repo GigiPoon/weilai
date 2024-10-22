@@ -24,16 +24,16 @@
 <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
 
 <!-- Typography -->
-<link rel="stylesheet" type="text/css" href="scss/typography.css" />
+<!-- <link rel="stylesheet" type="text/css" href="scss/typography.scss" /> -->
 
 <!-- Shortcodes -->
-<link rel="stylesheet" type="text/css" href="scss/shortcodes/shortcodes.css" />
+<!-- <link rel="stylesheet" type="text/css" href="scss/shortcodes/shortcodes.scss" /> -->
 
 <!-- Style -->
 <link rel="stylesheet" type="text/css" href="scss/style.css" />
 
 <!-- Responsive -->
-<link rel="stylesheet" type="text/css" href="scss/responsive.css" />
+<!-- <link rel="stylesheet" type="text/css" href="scss/responsive.scss" /> -->
 
 </head>
 
@@ -104,13 +104,22 @@
         <!-- menu links -->
         <div class="menu-bar">
          <ul class="menu-links">
-         <li><a href="index.html">Home <i class="fa fa-angle-down fa-indicator"></i></a>
-            <li><a href="about-02.html">About <i class="fa fa-angle-down fa-indicator"></i></a>
-            <li><a href="team-02.html">Teams <i class="fa fa-angle-down fa-indicator"></i></a>
-            <li><a href="service-02.html">Services <i class="fa fa-angle-down fa-indicator"></i></a>
-            <li><a href="contact-05.html">Contact Us<i class="fa fa-angle-down fa-indicator"></i></a>                   
+          <li><a href="index.html" lang="en">Home <i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <li><a href="index.html" lang="zh">首页 <i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <li><a href="about-02.html" lang="en">About <i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <li><a href="about-02.html" lang="zh">关于我们 <i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <!-- <li><a href="team-02.html">Teams <i class="fa fa-angle-down fa-indicator"></i></a> -->
+          <li><a href="service-02.html" lang="en">Services <i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <li><a href="service-02.html" lang="zh">服务产品 <i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <li><a href="contact-05.html" lang="en">Contact Us<i class="fa fa-angle-down fa-indicator"></i></a></li>
+          <li><a href="contact-05.html" lang="zh">联系我们<i class="fa fa-angle-down fa-indicator"></i></a></li>  
+          <li><select id="lang-switch" class="custom-select">
+            <option value="en">ENG</option>
+            <option value="zh">中文</option>
+        </select></li>
+          <!-- <li><button id="switch-lang">Switch Language</button></li> -->
         </ul>
-        <div class="search-cart">
+        <!-- <div class="search-cart">
           <div class="search">
             <a class="search-btn not_click" href="javascript:void(0);"></a>
               <div class="search-box not-click">
@@ -119,7 +128,7 @@
                   <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
                 </form>
            </div>
-          </div>
+          </div> -->
           <!-- <div class="shpping-cart">
            <a class="cart-btn" href="#"> <i class="fa fa-shopping-cart icon"></i> <strong class="item">2</strong></a>
             <div class="cart">
@@ -208,7 +217,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 5; white-space: nowrap; font-size: 40px; line-height: 55px; font-weight: 200; color: rgba(255,255,255,1); font-family:Montserrat ;">The intuitive equity platform <br/>for fast-growing startups </div>
+            style="z-index: 5; white-space: nowrap; font-size: 40px; line-height: 55px; font-weight: 200; color: rgba(255,255,255,1); font-family:Montserrat ;">Navigating Investments<br/> for a Brighter Future </div>
 
     <!-- LAYER NR. 2 -->
     <!-- <div class="tp-caption   tp-resizeme  rev-color"
@@ -248,7 +257,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;"> Versatile  &nbsp; &nbsp;| </div>
+            style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;"> Property  &nbsp; &nbsp;| </div>
 
     <!-- LAYER NR. 4 -->
     <div class="tp-caption   tp-resizeme"
@@ -268,7 +277,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;"> Super Fast  &nbsp; &nbsp;| </div>
+            style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;"> Investment  &nbsp; &nbsp;| </div>
 
     <!-- LAYER NR. 5 -->
     <div class="tp-caption   tp-resizeme"
@@ -288,7 +297,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 12; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;"> Creative  &nbsp; &nbsp;| </div>
+            style="z-index: 12; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;"> Trust  &nbsp; &nbsp;| </div>
 
     <!-- LAYER NR. 6 -->
     <div class="tp-caption   tp-resizeme"
@@ -308,7 +317,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 14; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;">Modern  &nbsp; &nbsp; | </div>
+            style="z-index: 14; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;">Wealth  &nbsp; &nbsp; | </div>
 
     <!-- LAYER NR. 7 -->
     <div class="tp-caption   tp-resizeme"
@@ -328,7 +337,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 16; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;">Elegant </div>
+            style="z-index: 16; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 600; color: rgba(255,255,255,1); font-family:Montserrat ;text-transform:uppercase;">Plan </div>
 
     <!-- LAYER NR. 8 -->
     <a class="tp-caption rev-btn  tp-resizeme  rev-button"
@@ -555,7 +564,7 @@
 <!--=================================
  special-feature -->
 
-<section class="page-section-ptb position-relative">
+<!-- <section class="page-section-ptb position-relative">
    <div class="container">
    <div class="row">
       <div class="col-md-8">
@@ -605,7 +614,7 @@
         </div>
        </div>
    </div>
-</section>
+</section> -->
 
 <!--=================================
  special-feature -->
@@ -614,7 +623,7 @@
  <!--=================================
  awesome-features  -->
 
- <section class="awesome-features gray-bg page-section-ptb pos-r">
+ <!-- <section class="awesome-features gray-bg page-section-ptb pos-r">
    <div class="side-background">
         <div class="col-lg-5 img-side img-left d-xs-block d-lg-block d-none">
             <div class="row page-section-pt mt-30">
@@ -625,10 +634,11 @@
    <div class="container">
      <div class="row justify-content-end">
        <div class="col-lg-7">
-       <div class="section-title">
-          <h6>Why Wei Lai Investment is best! </h6>
-          <h2 class="title-effect">Our awesome core features</h2>
-          <p>Truly ideal solutions for your business.</p>
+       <div class="section-title">  
+          <h6 lang="en">Why Wei Lai Investment is best! </h6>
+          <h6 lang="zh">你好! 语言切换器</h6>
+          <p lang="en">Truly ideal solutions for your business.</p>
+          <p lang="zh">你好! 语言切换器</p>
         </div>
          <div class="row">
            <div class="col-md-6 col-sm-6">
@@ -637,9 +647,12 @@
               <span class="ti-desktop theme-color"></span>
               </div>
               <div class="feature-info">
-                  <h5>Perfect design</h5>
-                   <p>Out of box thinking and <span class="theme-color" data-bs-toggle="tooltip" data-bs-placement="top" title="Won 10+ Awards"> Award-winning</span> investment agency. </p>
-                  <a class="button icon-color" href="#">Read more <i class="fa fa-angle-right"></i></a>
+                  <h5 lang="en">Perfect design</h5>
+                  <h5 lang="zh">你好! 语言切换器 测试</h5>
+                   <p lang="en">Out of box thinking and <span class="theme-color" data-bs-toggle="tooltip" data-bs-placement="top" title="Won 10+ Awards"> Award-winning</span> investment agency. </p>
+                   <p lang="zh">你好! 语言切换器 <span class="theme-color" data-bs-toggle="tooltip" data-bs-placement="top" title="Won 10+ Awards"> 测试</span> 测试 </p>
+                  <a class="button icon-color" href="#" lang="en">Read more <i class="fa fa-angle-right"></i></a>
+                  <a class="button icon-color" href="#" lang="zh">测试 <i class="fa fa-angle-right"></i></a>
                </div>
            </div>
           </div>
@@ -686,7 +699,163 @@
        </div>
      </div>
    </div>
- </section>
+ </section> -->
+
+ <section class="service gray-bg page-section-ptb">
+  <div class="container">
+    <div class="row justify-content-center">
+       <div class="col-lg-8">
+        <div class="section-title text-center">
+            <h6 lang="en">We're Good At </h6>
+            <h2 class="title-effect" lang="en">Our Service</h2>
+            <h2 class="title-effect" lang="zh">未来投资</h2>
+            <p lang="en">Here is the entire investment plan in Canadian dollars (CAD):</p>
+            <p lang="zh">未来投资 产品分类</p>
+          </div>
+
+
+      </div>
+    </div>
+<!-- =========================================== -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-30 ">
+          <div class="feature-text box-shadow h-100 text-center vertical-center">
+            <!-- <div class="feature-icon">
+              <span class="ti-layers-alt theme-color"></span>
+            </div> -->
+            <div class="feature-info">
+              <h4 class="pb-10" lang="en">Property Investment Plan <br>(Interest-Free, Full Payment for Property)</h4>
+              <p lang="en"><strong>Personal Family Housing Five-Year Plan <br>
+                Monthly Payment | Property Price Limit | Duration (Five Years)</strong></p>
+              <p lang="en">$1,000 CAD → Property Price: Within $1.2 million CAD <br>
+                $1,500 CAD → Property Price: Within $1.8 million CAD <br>
+                $2,000 CAD → Property Price: Within $2.4 million CAD <br>
+                $2,500 CAD → Property Price: Within $3.0 million CAD <br>
+                $3,000 CAD → Property Price: Within $3.6 million CAD</p>
+                <p lang="en">This plan allows customers to receive 20 times
+                  their contributions after five years (excluding service and tax fees).</p>
+                  <h4 class="pb-10" lang="zh">1、置业: <br>(去利息、全款购房)</h4>
+                  <p lang="zh">个人家庭住宅五年计划</p>
+              <p lang="zh"><strong>月供</strong><strong>房价：。</strong>  <strong>年数</strong></p> 
+               <p lang="zh">$1000 120万以内（五年） <br>
+                $1500 180 万以内（五年）<br>
+                $2000 240万以内（五年）<br>
+                $2500 300万以内（五年）<br>
+                $3000 360万以内（五年）
+              </p>
+              <p lang="zh">此计划客户供款忙五年后，以 20倍返还客户 (未扣除服务费与税费)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-30 ">
+          <div class="feature-text box-shadow h-100 text-center vertical-center">
+            <!-- <div class="feature-icon">
+            <span aria-hidden="true" class="ti-image theme-color"></span>
+            </div> -->
+            <div class="feature-info">
+              <h4 class="pb-10" lang="en">DAY=MONTH Plan <br>(3-10 Year Plan)</h4>
+              <p lang="en">Daily contribution of <strong>$10 CAD</strong> (equivalent to <strong>$3,650 CAD</strong> annually), with a <strong>12 times return:</strong></p>
+              <p lang="en"><strong>Contribution Amount | Duration | Return Amount</strong><br></p>
+              <p lang="en">$10,950 CAD → 3 years → Return $131,400 CAD <br>
+                $14,600 CAD → 4 years → Return $175,200 CAD <br>
+                $18,250 CAD → 5 years → Return $219,000 CAD <br>
+                $21,900 CAD → 6 years → Return $262,800 CAD <br>
+                $25,550 CAD → 7 years → Return $306,600 CAD <br>
+                $29,200 CAD → 8 years → Return $350,400 CAD <br>
+                $32,850 CAD → 9 years → Return $394,200 CAD <br>
+                $36,500 CAD → 10 years → Return $438,000 CAD</p>
+                <h4 class="pb-10" lang="zh">DAY=MONTH Plan <br> （3-10年计划）</h4>
+                <p lang="zh">（每天供款 10元。每年3650元，12倍返还）</p>
+                <p lang="zh"><strong>供款。年数。返现金额</strong><br></p>
+                <p lang="zh">
+                  10950。 3。 131400 <br>
+                  14600。 4。 175200 <br>
+                  18250。 5。 219000 <br>
+                  21900。 6。 262800 <br>
+                  25550。 7。 306600 <br>
+                  29200。 8。 350400 <br>
+                  32850。 9。 394200 <br>
+                  36500。 10。438000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-30 ">
+          <div class="feature-text box-shadow h-100 text-center vertical-center">
+            <!-- <div class="feature-icon">
+            <span aria-hidden="true" class="ti-heart theme-color"></span>
+            </div> -->
+            <div class="feature-info">
+              <h4 class="pb-10" lang="en">Retirement Plan <br>(33.3 Times Return)</h4>
+              <p lang="en"><strong>Monthly Payment | Duration | Return Amount</strong></p>
+              <p lang="en">$100 CAD → 5 years → Return $200,000 CAD <br>
+                $200 CAD → 5 years → Return $400,000 CAD <br>
+                $300 CAD → 5 years → Return $600,000 CAD <br>
+                $400 CAD → 5 years → Return $800,000 CAD <br>
+                $500 CAD → 5 years → Return $1 million CAD</p>
+              <h4 class="pb-10" lang="zh">RETIRE PLAN 退休计划 <br>（33.3倍返还）</h4>
+              <p lang="zh"><strong>月供。年限。返现金额</strong></p>
+              <p lang="zh">
+                100。5。20 万 <br>
+                200。5。40 万 <br>
+                300。5。60 万 <br>
+                400。5。80 万 <br>
+                500。5。100 万
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-30 ">
+          <div class="feature-text box-shadow h-100 text-center vertical-center">
+            <!-- <div class="feature-icon">
+            <span aria-hidden="true" class="ti-split-v theme-color"></span>
+            </div> -->
+            <div class="feature-info">
+            <h4 class="pb-10" lang="en">Student Plan</h4>
+            <p lang="en"><strong>Monthly Payment | Duration | Return Amount</strong>
+              <p lang="en">$233 CAD → 7 years → Return $800,000 CAD <br>
+              $90 CAD → 18 years → Return $800,000 CAD</p>
+            <h4 class="pb-10" lang="zh">STUDENT PLAN 学生计划</h4>
+            <p lang="zh"><strong>月供。年限 返现金额</strong>
+            <p lang="zh">233。7。80 万。<br>
+              90。18。80 万</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-30 ">
+          <div class="feature-text box-shadow h-100 text-center vertical-center">
+            <!-- <div class="feature-icon">
+            <span aria-hidden="true" class="ti-paint-bucket theme-color"></span>
+           </div> -->
+            <div class="feature-info">
+            <h4 class="pb-10" lang="en">People's Trust Wealth Plan</h4>
+            <p lang="en">Investment categories:</p>
+            <p lang="en"><strong>1.</strong> Financial markets, securities, insurance <br>
+              <strong>2.</strong> Mining, scientific research, technology, communications, new energy, transportation, aviation, aerospace <br>
+              <strong>3.</strong> Commercial properties, real estate <br>
+              <strong>4.</strong> Agriculture, livestock, fishing, traditional crafts <br>
+              <strong>5.</strong> Apparel, dining, entertainment</p>
+              <h4 class="pb-10" lang="zh">百姓信托致富计划投资</h4>
+            <p lang="zh"><strong>《1》</strong> 金融股市证券保险类 <br>
+              <strong>《2》</strong> 矿产/科研/科技/通讯/新能源类/交通/航空/航天 <br>
+              <strong>《3》</strong> 农业/畜牧业/渔业/传统文化工艺 <br>
+              <strong>《4》</strong> 农业/畜牧业/渔业/传统文化工艺 <br>
+              <strong>《5》</strong> 服饰/餐饮食品/娱乐休闲</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-30">
+          <div class="feature-text box-shadow h-100 text-center vertical-center">
+            <!-- <div class="feature-icon">
+            <span aria-hidden="true" class="ti-html5 theme-color"></span>
+            </div> -->
+            <div class="feature-info">
+            <h4 class="pb-10" lang="en">Business Plans for Client Partnerships & Investment Partners</h4>
+            <h4 class="pb-10" lang="zh">客户商业计划书寻求合作类投资 & 合作投资方</h4>
+            <!-- <p>Structure your pools with ultimate flexibility, want to group option holders by region or funding phase, go for it!</p> -->
+          </div>
+        </div>
+    </div>
+</section>
 
 <!--=================================
  awesome-features  -->
@@ -783,7 +952,7 @@ about- -->
  <!--=================================
 counter-->
 
-<section class="our-service-home page-section-ptb bg-overlay-black-80 jarallax" data-speed="0.6" data-img-src="images/bg/06.jpg">
+<!-- <section class="our-service-home page-section-ptb bg-overlay-black-80 jarallax" data-speed="0.6" data-img-src="images/bg/06.jpg">
  <div class="container">
   <div class="row mb-60">
       <div class="col-md-8">
@@ -825,7 +994,7 @@ counter-->
      </div>
   </div>
  </div>
-</section>
+</section> -->
 
 <!--=================================
 counter-->
@@ -833,7 +1002,7 @@ counter-->
  <!--=================================
  Who we are -->
 
-<section class="white-bg page-section-ptb">
+<!-- <section class="white-bg page-section-ptb">
 	<div class="container">
   <div class="custom-content">
 		<div class="row">
@@ -882,7 +1051,7 @@ counter-->
        </div>
      </div>
   	</div>
-  </section>
+  </section> -->
 
  <!--=================================
  Who we are -->
@@ -979,7 +1148,7 @@ counter-->
   <!--=================================
 Price table -->
 
-<section class="page-section-ptb white-bg">
+<!-- <section class="page-section-ptb white-bg">
   <div class="container">
     <div class="row">
      <div class="col-md-12">
@@ -1073,7 +1242,7 @@ Price table -->
         </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!--=================================
 Price table -->
@@ -1081,7 +1250,7 @@ Price table -->
 <!--=================================
  Our Testimonial -->
 
-<section class="gray-bg page-section-pt happy-clients">
+<!-- <section class="gray-bg page-section-pt happy-clients">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 align-self-end">
@@ -1137,7 +1306,7 @@ Price table -->
     </div>
    </div>
  </div>
-</section>
+</section> -->
 
 <!--=================================
  Our Testimonial -->
@@ -1282,7 +1451,7 @@ google-map -->
 <footer class="footer page-section-pt black-bg">
  <div class="container">
   <div class="row">
-      <div class="col-lg-2 col-sm-6 sm-mb-30">
+      <div class="col-lg-2 col-sm-2 sm-mb-30">
       <div class="footer-useful-link footer-hedding">
         <h6 class="text-white mb-30 mt-10 text-uppercase">Navigation</h6>
         <ul>
@@ -1294,7 +1463,7 @@ google-map -->
         </ul>
       </div>
     </div>
-    <div class="col-lg-2 col-sm-6 sm-mb-30">
+    <!-- <div class="col-lg-2 col-sm-6 sm-mb-30">
       <div class="footer-useful-link footer-hedding">
         <h6 class="text-white mb-30 mt-10 text-uppercase">Useful Link</h6>
         <ul>
@@ -1305,8 +1474,8 @@ google-map -->
           <li><a href="#">Client Management</a></li>
         </ul>
       </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 xs-mb-30">
+    </div> -->
+    <div class="col-lg-4 col-sm-4 xs-mb-30">
     <h6 class="text-white mb-30 mt-10 text-uppercase">Contact Us</h6>
     <ul class="addresss-info">
         <li><i class="fa fa-map-marker"></i> <p>Address: 675 Cochrane Drive, East Tower, 6th Floor Markham, ON, L3R 0B8</p> </li>
@@ -1314,9 +1483,10 @@ google-map -->
         <li><i class="fa fa-envelope-o"></i>Email: info@weilaiinvestment.com</li>
       </ul>
     </div>
-    <div class="col-lg-4 col-sm-6">
-      <h6 class="text-white mb-30 mt-10 text-uppercase">Subscribe to Our Newsletter</h6>
-        <p class="mb-30">Sign Up to our Newsletter to get the latest news and offers.</p>
+    <div class="col-lg-6 col-sm-6">
+      <h6 class="text-white mb-30 mt-10 text-uppercase" lang="en">Subscribe to Our Newsletter</h6>
+      <h6 class="text-white mb-30 mt-10 text-uppercase" lang="zh">订阅我们最新资讯</h6>
+        <p class="mb-30" >Sign Up to our Newsletter to get the latest news and offers.</p>
          <div class="footer-Newsletter">
           <div id="mc_embed_signup_scroll">
             <form action="php/mailchimp-action.php" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
@@ -1398,6 +1568,36 @@ google-map -->
 
 <!-- custom -->
 <script src="js/custom.js"></script>
+
+<!-- <script>
+
+  // // Initialize language switch
+// setupLanguageSwitch();
+
+$(document).ready(function () {
+            // Initially hide non-default languages
+            $('[lang="es"], [lang="zh"]').hide();
+
+            $('#lang-switch').change(function (event) {
+                // Prevent default action (if in a form)
+                event.preventDefault();
+                
+                // Get the selected language
+                var lang = $(this).val();
+
+                // Change the lang attribute of the <html> element
+                  $('html').attr('lang', lang);
+                
+                // Hide all language-specific content
+                $('[lang]').hide();
+                
+                // Show content for the selected language
+                $('[lang="' + lang + '"]').show();
+                
+            });
+        });
+
+</script> -->
 
 </body>
 </html>
