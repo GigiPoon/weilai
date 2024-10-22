@@ -1078,21 +1078,42 @@ $(document).ready(function () {
   // Initially hide non-default languages
   $('[lang="es"], [lang="zh"]').hide();
 
-  $('#lang-switch').change(function (event) {
-      // Prevent default action (if in a form)
-      event.preventDefault();
-      
-      // Get the selected language
-      var lang = $(this).val();
-
-      // Change the lang attribute of the <html> element
-        $('html').attr('lang', lang);
-      
-      // Hide all language-specific content
+  // Load saved language from local storage
+  function loadLanguageSelection() {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage) {
+      $('#lang-switch').val(savedLanguage);
+      $('html').attr('lang', savedLanguage);
       $('[lang]').hide();
-      
-      // Show content for the selected language
-      $('[lang="' + lang + '"]').show();
-      
+      $('[lang="' + savedLanguage + '"]').show();
+    }
+  }
+
+  // Save selected language to local storage
+  function saveLanguageSelection(lang) {
+    localStorage.setItem('selectedLanguage', lang);
+  }
+
+  $('#lang-switch').change(function (event) {
+    // Prevent default action (if in a form)
+    event.preventDefault();
+    
+    // Get the selected language
+    var lang = $(this).val();
+
+    // Change the lang attribute of the <html> element
+    $('html').attr('lang', lang);
+    
+    // Hide all language-specific content
+    $('[lang]').hide();
+    
+    // Show content for the selected language
+    $('[lang="' + lang + '"]').show();
+
+    // Save the selected language to local storage
+    saveLanguageSelection(lang);
   });
+
+  // Load the saved language on page load
+  loadLanguageSelection();
 });

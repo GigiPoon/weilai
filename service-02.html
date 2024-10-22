@@ -804,30 +804,30 @@ action box- -->
   // // Initialize language switch
 // setupLanguageSwitch();
 
-$(document).ready(function () {
-            // Initially hide non-default languages
-            $('[lang="es"], [lang="zh"]').hide();
+// $(document).ready(function () {
+//             // Initially hide non-default languages
+//             $('[lang="es"], [lang="zh"]').hide();
 
-            $('#lang-switch').change(function (event) {
-                // Prevent default action (if in a form)
-                event.preventDefault();
+//             $('#lang-switch').change(function (event) {
+//                 // Prevent default action (if in a form)
+//                 event.preventDefault();
                 
-                // Get the selected language
-                var lang = $(this).val();
+//                 // Get the selected language
+//                 var lang = $(this).val();
 
-                // Change the lang attribute of the <html> element
-                  $('html').attr('lang', lang);
+//                 // Change the lang attribute of the <html> element
+//                   $('html').attr('lang', lang);
                 
-                // Hide all language-specific content
-                $('[lang]').hide();
+//                 // Hide all language-specific content
+//                 $('[lang]').hide();
                 
-                // Show content for the selected language
-                $('[lang="' + lang + '"]').show();
+//                 // Show content for the selected language
+//                 $('[lang="' + lang + '"]').show();
                 
-            });
-        });
+//             });
+//         });
 
-</script>
+// </script>
 
 </body>
 </html>
